@@ -561,7 +561,7 @@
       document.getElementById('stateInput').value = '';
 
       // Check if user input matches the highlighted state's name
-      if (userInput.toLowerCase() === randomState.name.toLowerCase()) {
+      if (userInput === randomState) {
         document.getElementById(randomState.id).classList.add('complete');
         resultDiv.innerText = `Correct! The highlighted state was ${randomState.name}.`;
 
